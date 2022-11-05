@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .form-body {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        border: 1px solid #505050;
+        padding: 30px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+    
+    .btn {
+        width: 70px;
+        height: 24px;
+        place-self: center;
+    }
+    
+    .form-input {
+        margin-top: 10px;
+        box-shadow: 2px 2px 2px 2px rgb(136, 136, 136);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Form action="/" method="post" class="form-body" fxLayoutAlign="center center" fxFlexFill>
+        <label for=" name">City Name:</label>
+        <input type="text" name="city" id="city" autocomplete="off" class="form-input" placeholder="Enter city name"></br>
+        <button type="submit" class="btn">Search</button>
+    </Form>
+</body>
+
+</html>
